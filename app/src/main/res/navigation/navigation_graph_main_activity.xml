@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph_main_activity"
+    app:startDestination="@id/splashFragment">
+    <activity
+        android:id="@+id/mailActivity"
+        android:name="com.example.popularmovietask.view.MainActivity"
+        android:label="splash_activity"
+        tools:layout="@layout/activity_main" />
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.popularmovietask.view.SplashFragment"
+        android:label="splash_fragment"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_userLoginFragment"
+            app:destination="@id/userLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userLoginFragment"
+        android:name="com.example.popularmovietask.view.UserLoginFragment"
+        android:label="user_login_fragment"
+        tools:layout="@layout/fragment_user_login">
+        <action
+            android:id="@+id/action_userLoginFragment_to_popularMovieListFragment"
+            app:destination="@id/popularMovieListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/popularMovieListFragment"
+        android:name="com.example.popularmovietask.view.PopularMovieListFragment"
+        android:label="popular_movie_list_fragment"
+        tools:layout="@layout/fragment_popular_movie_list"/>
+
+</navigation>

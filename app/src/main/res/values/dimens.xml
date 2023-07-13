@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="zero">0dp</dimen>
+
+    <!--Spacings-->
+    <dimen name="item_spacing_8">8dp</dimen>
+    <dimen name="item_spacing_10">10dp</dimen>
+    <dimen name="item_spacing_16">16dp</dimen>
+    <dimen name="item_spacing_20">20dp</dimen>
+
+    <!--text_sizes-->
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <EditText
+        android:id="@+id/enter_email_edittext"
+        android:inputType="textEmailAddress"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/item_spacing_16"
+        android:layout_marginTop="@dimen/item_spacing_20"
+        android:layout_width="@dimen/zero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_email_textview" />
+
+    <TextView
+        android:background="@color/transparent"
+        android:id="@+id/email_error_textview"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/item_spacing_16"
+        android:layout_marginStart="@dimen/item_spacing_16"
+        android:layout_width="@dimen/zero"
+        android:maxLines="1"
+        android:visibility="gone"
+        android:text="@string/enter_correct_email_address"
+        android:textColor="@color/pinkish_red"
+        android:textSize="@dimen/text_size_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_email_edittext" />
+
+
+    <TextView
+        android:id="@+id/enter_email_textview"
+        android:textSize="@dimen/text_size_20"
+        android:layout_height="wrap_content"
+        android:layout_width="@dimen/zero"
+        android:textColor="@color/rangoon_green"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/item_spacing_20"
+        android:layout_marginHorizontal="@dimen/item_spacing_20"
+        android:text="@string/enter_email_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/enter_password_textview"
+        android:layout_width="@dimen/zero"
+        android:textSize="@dimen/text_size_20"
+        android:layout_height="wrap_content"
+        android:textColor="@color/rangoon_green"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/item_spacing_20"
+        android:layout_marginHorizontal="@dimen/item_spacing_20"
+        android:text="Enter password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email_error_textview"/>
+
+    <EditText
+        android:id="@+id/enter_password_edittext"
+        android:layout_width="@dimen/zero"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/item_spacing_16"
+        android:layout_marginTop="@dimen/item_spacing_20"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:inputType="textPassword"
+        android:maxLength="15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_password_textview" />
+
+    <TextView
+        android:id="@+id/password_error_message_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/item_spacing_16"
+        android:layout_marginTop="@dimen/item_spacing_8"
+        android:layout_marginEnd="@dimen/item_spacing_16"
+        android:text="@string/incorrect_password"
+        android:textColor="@color/pinkish_red"
+        android:textSize="@dimen/text_size_12"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_password_edittext" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="@dimen/zero"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape_disable"
+        android:enabled="false"
+        android:text="@string/submit"
+        android:layout_marginHorizontal="@dimen/item_spacing_20"
+        android:layout_marginBottom="@dimen/item_spacing_20"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
